@@ -1,0 +1,25 @@
+name: 'Tema de Notícias'
+type: theme
+description: 'Tema de Notícias subtheme based on Bootstrap 5 theme.'
+core_version_requirement: '^9.4 || ^10'
+'base theme': bootstrap5
+libraries:
+  - padrao_noticias/darkmode
+  - padrao_noticias/global-styling
+  - padrao_noticias/global-scripts
+ckeditor_stylesheets:
+  - css/style.css
+ckeditor5-stylesheets:
+  - css/ck5style.css
+regions:
+  header: Header
+  nav_branding: 'Navigation branding region'
+  nav_additional: 'Additional navigation region (eg search form, social icons, etc)'
+  nav_main: 'Main navigation region'
+  breadcrumb: Breadcrumbs
+  content: 'Main content'
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  footer: Footer
+libraries-override:
+  bootstrap5/global-styling: false

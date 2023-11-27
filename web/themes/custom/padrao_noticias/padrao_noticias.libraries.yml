@@ -1,0 +1,23 @@
+global-styling:
+  css:
+    theme:
+      css/style.css: {}
+      css/style_custom.css: {}      
+global-scripts:
+  js:
+    js/navmobile.js: {}
+    js/custom_script.js: {}
+    
+slick:
+  version: 1.8.1
+  js:
+    libraries/slick/slick.min.js: {}
+  css:
+    theme:      
+      libraries/slick/slick.css: {}
+      libraries/slick/slick-theme.css: {}
+  dependencies:
+    - core/jquery
+darkmode:
+    js:
+      libraries/darkmode/darkmode-js.min.js: {}

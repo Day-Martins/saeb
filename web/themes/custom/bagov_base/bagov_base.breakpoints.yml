@@ -1,0 +1,89 @@
+bagov_base.screen.xs-max:
+  label: xs-max
+  mediaQuery: '(max-width: 575.98px)'
+  weight: 1
+  group: bagov_base.screen
+  multipliers:
+    - 1x
+    - 2x
+
+bagov_base.screen.sm-min:
+  label: sm-min
+  mediaQuery: '(min-width: 576px)'
+  weight: 2
+  group: bagov_base.screen
+  multipliers:
+    - 1x
+    - 2x
+
+bagov_base.screen.sm-max:
+  label: sm-max
+  mediaQuery: '(max-width: 767.98px)'
+  weight: 3
+  group: bagov_base.screen
+  multipliers:
+    - 1x
+    - 2x
+
+bagov_base.screen.md-min:
+  label: md-min
+  mediaQuery: '(min-width: 768px)'
+  weight: 4
+  group: bagov_base.screen
+  multipliers:
+    - 1x
+    - 2x
+
+bagov_base.screen.md-max:
+  label: md-max
+  mediaQuery: '(max-width: 991.98px)'
+  weight: 5
+  group: bagov_base.screen
+  multipliers:
+    - 1x
+    - 2x
+
+bagov_base.screen.lg-min:
+  label: lg-min
+  mediaQuery: '(min-width: 992px)'
+  weight: 6
+  group: bagov_base.screen
+  multipliers:
+    - 1x
+    - 2x
+
+bagov_base.screen.lg-max:
+  label: lg-max
+  mediaQuery: '(max-width: 1199.98px)'
+  weight: 7
+  group: bagov_base.screen
+  multipliers:
+    - 1x
+    - 2x
+
+bagov_base.screen.xl-min:
+  label: xl-min
+  mediaQuery: '(min-width: 1200px)'
+  weight: 8
+  group: bagov_base.screen
+  multipliers:
+    - 1x
+    - 2x
+
+bagov_base.screen.xl-max:
+  label: xl-max
+  mediaQuery: '(max-width: 1399.98px)'
+  weight: 9
+  group: bagov_base.screen
+  multipliers:
+    - 1x
+    - 2x
+
+bagov_base.screen.xxl-min:
+  label: xxl-min
+  mediaQuery: '(min-width: 1400px)'
+  weight: 10
+  group: bagov_base.screen
+  multipliers:
+    - 1x
+    - 2x
