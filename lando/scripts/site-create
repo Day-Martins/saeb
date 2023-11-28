@@ -1,0 +1,38 @@
+#!/bin/bash
+
+SITE_NAME=$1
+
+NC='\033[0m' # No Color
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[0;33m'
+CYAN='\033[0;36m'
+
+#Create a multisite file if dont exists
+MS_FILE=./web/sites/sites.php
+if [ ! -f "$MS_FILE" ]; then
+    printf "Criando arquivo $MS_FILE\n"
+    touch ./web/sites/sites.php
+    printf '<?php' > $MS_FILE
+fi
+
+#Add a site to multisite file
+printf '\n$sites["'$SITE_NAME'.multisite.local"] = "'$SITE_NAME'";' >> $MS_FILE
+
+#Install new site and Create database
+drush site:install --sites-subdir=$SITE_NAME --account-mail="admin@qintess.com" --account-pass="admin" --locale="pt-br" --site-name=$SITE_NAME --uri="http://$SITE_NAME.multisite.local" --db-su=root --db-url="mysql://$SITE_NAME:$SITE_NAME@database/$SITE_NAME"
+
+#Created on default path
+printf "${GREEN}O site foi criado em web/sites/$SITE_NAME${NC}\n"
+
+#Check if into a WSL or not and add site to hosts file
+if [[ "$(</proc/sys/kernel/osrelease)" == *microsoft* ]]; then
+    printf "${YELLOW}Adicione o host a seguir no final do arquivo: ${NC}C:/Windows/System32/drivers/etc/hosts\n"
+    printf "${GREEN}> ${NC}127.0.0.1 $SITE_NAME.multisite.local${NC}\n"
+else
+    printf "${GREEN}$SITE_NAME.multisite.local adicionado a '/etc/hosts'${NC}\n"
+    printf '127.0.0.1 '$SITE_NAME'.multisite.local' >> /etc/hosts
+fi
+
+printf "${YELLOW}Execute o comando a seguir na raiz do projeto ${RED}SEM O LANDO${NC}\n"
+printf "${GREEN}> ${NC}sudo sh scripts/move-site $SITE_NAME\n"

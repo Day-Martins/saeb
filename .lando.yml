@@ -1,0 +1,46 @@
+name: multisite
+recipe: drupal10
+config:
+  php: "8.2"
+  composer_version: "2.6.5"
+  via: apache
+  webroot: web
+  database: mysql:8.0
+  drush: false
+  xdebug: false
+services:
+  appserver:
+    scanner: false
+    build:
+      - composer install
+  database:
+    type: mysql:8.0
+    portforward: true
+    configuration:
+      properties:
+        max_allowed_packet: 77
+  pma:
+    type: phpmyadmin
+    hosts:
+      - database
+    overrides:
+      environment:
+        PMA_HOST: database
+        PMA_USER: root
+tooling:
+  drush:
+    service: appserver
+    description: Run Drush commands
+    cmd: drush
+  site-create <brand>:
+    service: appserver
+    description: Configure a new Drupal site
+    cmd: lando/scripts/site-create
+proxy:
+  appserver:
+    - saeb.multisite.local
+    - setre.multisite.local
+    - secult.multisite.local
+    - oge.multisite.local
+    - sema.multisite.local
+    - sec.multisite.com

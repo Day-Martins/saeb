@@ -1,0 +1,33 @@
+#!/bin/bash
+
+SITE_NAME=$1
+
+NC='\033[0m' # No Color
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[0;33m'
+CYAN='\033[0;36m'
+
+printf "${GREEN}Para mover o site ${YELLOW}$SITE_NAME ${GREEN}por favor informe o novo local${NC}\n";
+printf "${YELLOW}ATENÇÃO!${GREEN} Informar o caminho absoluto, ex: ${NC}/home/usuario/projects/PRODEB/\n";
+printf "Path de instalação atual: ${YELLOW}[multisite/web/sites/]${NC}\n";
+read -p "> " SITE_PATH
+if [ -d $SITE_PATH ]; then
+    chmod 755 $SITE_PATH
+    
+    #Move site
+    printf "${YELLOW}Movendo site para $SITE_PATH/$SITE_NAME${NC}\n"
+    mv ./web/sites/$SITE_NAME $SITE_PATH/
+    printf "${GREEN}O site foi movido com sucesso!${NC}\n"
+
+    chmod 755 $SITE_PATH$SITE_NAME
+
+    #Create a symlink to site
+    printf "${CYAN}Criando link simbólico do site...${NC}\n"
+    ln -s $SITE_PATH/$SITE_NAME ./web/sites/$SITE_NAME
+    printf "${GREEN}O link foi criado com sucesso!${NC}\n"
+
+else
+    printf "${RED}O diretório $SITE_PATH não foi encontrado${NC}\n"
+    printf "${YELLOW}O site foi mantido em web/sites/$SITE_NAME${NC}\n"
+fi
