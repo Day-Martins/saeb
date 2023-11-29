@@ -3,6 +3,7 @@ type: theme
 description: 'Tema base ba.gov.br baseado no tema do bootstrap 5, para criar um novo site você deve derivar um novo tema a partir dessa base, nas configurações. '
 core_version_requirement: '^9.4 || ^10'
 'base theme': bootstrap5
+logo: logo.png
 libraries:
   - bagov_base/darkmode
   - bagov_base/global-styling

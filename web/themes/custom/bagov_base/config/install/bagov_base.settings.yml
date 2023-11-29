@@ -6,3 +6,5 @@ b5_footer_schema: dark
 b5_footer_bg_schema: secondary
 b5_top_container: container
 b5_top_container_config: ''
+logo:
+  use_default: true

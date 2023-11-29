@@ -20,10 +20,14 @@ fi
 printf '\n$sites["'$SITE_NAME'.multisite.local"] = "'$SITE_NAME'";' >> $MS_FILE
 
 #Install new site and Create database
-drush site:install --sites-subdir=$SITE_NAME --account-mail="admin@qintess.com" --account-pass="admin" --locale="pt-br" --site-name=$SITE_NAME --uri="http://$SITE_NAME.multisite.local" --db-su=root --db-url="mysql://$SITE_NAME:$SITE_NAME@database/$SITE_NAME"
-
-#Created on default path
+printf "${YELLOW}Instalando o site $SITE_NAME${NC}\n"
+drush -l http://$SITE_NAME.multisite.local site:install --sites-subdir=$SITE_NAME --account-mail="admin@qintess.com" --account-pass="admin" --locale="pt-br" --site-name=$SITE_NAME --uri="http://$SITE_NAME.multisite.local" --db-su=root --db-url="mysql://$SITE_NAME:$SITE_NAME@database/$SITE_NAME"
 printf "${GREEN}O site foi criado em web/sites/$SITE_NAME${NC}\n"
+
+#Import a base database to new site
+# printf "${YELLOW}Espelhando o banco de dados base no site $SITE_NAME${NC}\n"
+# drush -l http://$SITE_NAME.multisite.local  sql:cli --db-url="mysql://$SITE_NAME:$SITE_NAME@database/$SITE_NAME" < ./base_db/multisite.sql
+# printf "${GREEN}O banco foi copiado com sucesso${NC}\n"
 
 #Check if into a WSL or not and add site to hosts file
 if [[ "$(</proc/sys/kernel/osrelease)" == *microsoft* ]]; then
