@@ -17,27 +17,23 @@
     wget https://files.lando.dev/installer/lando-x64-stable.deb
     sudo dpkg -i lando-x64-stable.deb
     ```
-3. CHANGE PERMISSIONS ON SITES PATH
-    ```
-    sudo chmod -R 755 <diretorio onde ficarão os sites>
-    ```
 
-4. RUN PROJECT (PROJECT ROOT)
+3. RUN PROJECT (PROJECT ROOT)
     ```
     lando start
     ```
 
-5. CREATE SITE (PROJECT ROOT)
+4. CREATE SITE (PROJECT ROOT)
     ```
     lando site-create <nome do site>
     ```
 
-6. MOVE SITE (PROJECT ROOT)
+5. MOVE SITE (PROJECT ROOT)
     ```
     sudo sh scripts/move-site <nome do site>
     ```
 
-7. ADD SITE INTO A .LANDO.YML (PROJECT ROOT)
+6. ADD SITE INTO A .LANDO.YML (PROJECT ROOT)
     ```
     Adicione a url do novo site no arquivo .lando.yml na raiz do seu projeto:
     .
