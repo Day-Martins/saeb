@@ -28,12 +28,7 @@
     lando site-create <nome do site>
     ```
 
-5. MOVE SITE (PROJECT ROOT)
-    ```
-    sudo sh scripts/move-site <nome do site>
-    ```
-
-6. ADD SITE INTO A .LANDO.YML (PROJECT ROOT)
+5. ADD SITE INTO A .LANDO.YML (PROJECT ROOT)
     ```
     Adicione a url do novo site no arquivo .lando.yml na raiz do seu projeto:
     .
