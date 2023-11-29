@@ -23,10 +23,14 @@
     lando start
     ```
 
+*PRONTO, AMBIENTE OK*
+
+**CRIANDO UM NOVO SITE**
 4. CREATE SITE (PROJECT ROOT)
     ```
     lando site-create <nome do site>
     ```
+*SIGA AS ORIENTAÇÕES DO PROMPT, CONFIRA O ARQUIVO lando.yml, CASO O SITE NÃO ESTEJA NO PROXY, SIGA O PASSO A SEGUIR*
 
 5. ADD SITE INTO A .LANDO.YML (PROJECT ROOT)
     ```
@@ -40,9 +44,7 @@
             - setre.multisite.local
             - <novosite>.multisite.local  #<--- Insira aqui
     ```
-
-
-
+    
 **UTILS**
 https://docs.lando.dev/drupal/getting-started.html
 https://drushcommands.com
