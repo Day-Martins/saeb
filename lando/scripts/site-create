@@ -21,13 +21,18 @@ printf '\n$sites["'$SITE_NAME'.multisite.local"] = "'$SITE_NAME'";' >> $MS_FILE
 
 #Install new site and Create database
 printf "${YELLOW}Instalando o site $SITE_NAME${NC}\n"
-drush -l http://$SITE_NAME.multisite.local site:install --sites-subdir=$SITE_NAME --account-mail="admin@qintess.com" --account-pass="admin" --locale="pt-br" --site-name=$SITE_NAME --uri="http://$SITE_NAME.multisite.local" --db-su=root --db-url="mysql://$SITE_NAME:$SITE_NAME@database/$SITE_NAME"
-printf "${GREEN}O site foi criado em web/sites/$SITE_NAME${NC}\n"
+drush -y -l http://$SITE_NAME.multisite.local site:install --sites-subdir=$SITE_NAME --account-mail="admin@qintess.com" --account-pass="admin" --locale="pt-br" --site-name=$SITE_NAME --uri="http://$SITE_NAME.multisite.local" --db-su=root --db-url="mysql://$SITE_NAME:$SITE_NAME@database/$SITE_NAME"
+printf "${GREEN}/var/www/html/multisites_govba/sites/$SITE_NAME${NC}\n"
 
 #Import a base database to new site
-# printf "${YELLOW}Espelhando o banco de dados base no site $SITE_NAME${NC}\n"
-# drush -l http://$SITE_NAME.multisite.local  sql:cli --db-url="mysql://$SITE_NAME:$SITE_NAME@database/$SITE_NAME" < ./base_db/multisite.sql
-# printf "${GREEN}O banco foi copiado com sucesso${NC}\n"
+printf "${YELLOW}Espelhando o banco de dados base no site $SITE_NAME${NC}\n"
+drush -y -l http://$SITE_NAME.multisite.local sql:cli --db-url="mysql://$SITE_NAME:$SITE_NAME@database/$SITE_NAME" < ./base_db/multisite.sql
+printf "${GREEN}O banco foi copiado com sucesso${NC}\n"
+
+#Rename new site
+printf "${YELLOW}Alterando nome do site${NC}\n"
+drush -y -l http://$SITE_NAME.multisite.local config-set system.site name $SITE_NAME
+printf "${GREEN}Nome alterado${NC}\n"
 
 #Check if into a WSL or not and add site to hosts file
 if [[ "$(</proc/sys/kernel/osrelease)" == *microsoft* ]]; then
@@ -38,5 +43,5 @@ else
     printf '127.0.0.1 '$SITE_NAME'.multisite.local' >> /etc/hosts
 fi
 
-printf "${YELLOW}Execute o comando a seguir na raiz do projeto ${RED}SEM O LANDO${NC}\n"
-printf "${GREEN}> ${NC}sudo sh scripts/move-site $SITE_NAME\n"
+printf "${YELLOW}ATENÇÃO! Os sites não estão mais em /web/sites os arquivos do novo site estão em:${NC}\n"
+printf "${GREEN}> ${NC}/var/www/html/multisites_govba/sites/$SITE_NAME\n"

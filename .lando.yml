@@ -13,6 +13,9 @@ services:
     scanner: false
     build:
       - composer install
+    overrides:
+      volumes:
+        - /var/www/html/multisites_govba/sites:/app/web/sites
   database:
     type: mysql:8.0
     portforward: true
