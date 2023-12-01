@@ -1,4 +1,5 @@
-langcode: en
+uuid: 11e0f4c0-e444-4337-a511-0166868d0dd7
+langcode: pt-br
 status: true
 dependencies:
   config:
@@ -15,9 +16,9 @@ provider: null
 plugin: 'system_menu_block:footer'
 settings:
   id: 'system_menu_block:footer'
-  label: Footer
-  provider: system
+  label: Rodapé
   label_display: '0'
+  provider: system
   level: 1
   depth: 0
   expand_all_items: false

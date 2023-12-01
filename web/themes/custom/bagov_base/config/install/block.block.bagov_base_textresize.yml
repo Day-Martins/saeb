@@ -1,0 +1,20 @@
+uuid: bf87ad4c-96fe-4960-9ee5-3b8f11f2e2b9
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - text_resize
+  theme:
+    - bagov_base
+id: bagov_base_textresize
+theme: bagov_base
+region: header
+weight: -7
+provider: null
+plugin: text_resize_block
+settings:
+  id: text_resize_block
+  label: Acessibilidade
+  label_display: '0'
+  provider: text_resize
+visibility: {  }

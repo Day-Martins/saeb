@@ -1,4 +1,5 @@
-langcode: en
+uuid: fb8b3d8f-3286-4d3e-80cf-133d1becb169
+langcode: pt-br
 status: true
 dependencies:
   theme:
@@ -11,9 +12,9 @@ provider: null
 plugin: local_tasks_block
 settings:
   id: local_tasks_block
-  label: Tabs
-  provider: core
+  label: Abas
   label_display: '0'
+  provider: core
   primary: true
   secondary: true
 visibility: {  }

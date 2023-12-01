@@ -1,0 +1,10 @@
+families:
+  - baseline
+  - outlined
+  - two-tone
+  - round
+  - sharp
+  - symbols__outlined
+  - symbols__rounded
+  - symbols__sharp
+langcode: pt-br

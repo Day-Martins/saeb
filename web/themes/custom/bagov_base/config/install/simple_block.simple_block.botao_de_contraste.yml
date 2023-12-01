@@ -1,0 +1,11 @@
+uuid: 78ba2525-3ac1-4e3c-8416-c107edadd916
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: botao_de_contraste
+title: 'Botão de contraste'
+content:
+  value: '<div id="contrast-btn"><span class="material-icons">contrast</span></div>'
+  format: full_html

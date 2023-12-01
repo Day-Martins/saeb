@@ -1,0 +1,11 @@
+uuid: 12d74dd7-09e2-40df-a217-2d1b501bdf8e
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+id: politica_de_privacidade
+title: 'Politica de Privacidade'
+content:
+  value: '<p><a href="https://www.ba.gov.br/politica-privacidade">POLITICA DE PRIVACIDADE</a></p>'
+  format: full_html

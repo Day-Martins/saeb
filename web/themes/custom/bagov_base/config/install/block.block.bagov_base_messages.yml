@@ -1,4 +1,5 @@
-langcode: en
+uuid: ca64807c-34bd-4141-a248-b904855d19c7
+langcode: pt-br
 status: true
 dependencies:
   module:
@@ -13,7 +14,7 @@ provider: null
 plugin: system_messages_block
 settings:
   id: system_messages_block
-  label: Messages
-  provider: system
+  label: Mensagens
   label_display: '0'
+  provider: system
 visibility: {  }
