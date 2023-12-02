@@ -59,7 +59,7 @@ printf '\n$sites["'$SITE_NAME'.multisite.local"] = "'$SITE_NAME'";' >> $MS_FILE
 #Install new site and Create database
 printf "${YELLOW}Instalando o site $SITE_NAME${NC}\n"
 drush -y -l http://$SITE_NAME.multisite.local site:install --sites-subdir=$SITE_NAME --account-mail="admin@qintess.com" --account-pass="admin" --locale="pt-br" --site-name=$SITE_NAME --uri="http://$SITE_NAME.multisite.local" --db-su=root --db-url="mysql://$SITE_NAME:$SITE_NAME@database/$SITE_NAME"
-printf "${GREEN}/var/www/html/multisites_govba/sites/$SITE_NAME${NC}\n"
+printf "${GREEN}/var/local/projects/multisites_govba/sites/$SITE_NAME${NC}\n"
 
 echo "Importar configurações do banco base? [y,N]"
 read input
