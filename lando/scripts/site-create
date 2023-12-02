@@ -25,7 +25,7 @@ install_with_db() {
 install_with_configs() {
 
     printf "${YELLOW}Instalando dependencias dos temas no site $SITE_NAME${NC}\n"
-    drush -y -l http://$SITE_NAME.multisite.local pm:install text_resize, simple_block, search, admin_toolbar, admin_toolbar_tools, material_icons
+    drush -y -l http://$SITE_NAME.multisite.local pm:install text_resize, simple_block, search, admin_toolbar, admin_toolbar_tools, material_icons, config_filter, config_split
     drush -y -l http://$SITE_NAME.multisite.local cdel material_icons.settings
     printf "${GREEN}Dependencias instaladas com sucesso${NC}\n"
 
@@ -81,4 +81,4 @@ else
 fi
 
 printf "${YELLOW}ATENÇÃO! Os sites não estão mais em /web/sites os arquivos do novo site estão em:${NC}\n"
-printf "${GREEN}> ${NC}/var/www/html/multisites_govba/sites/$SITE_NAME\n"
+printf "${GREEN}> ${NC}/var/local/projects/multisites_govba/sites/$SITE_NAME\n"
