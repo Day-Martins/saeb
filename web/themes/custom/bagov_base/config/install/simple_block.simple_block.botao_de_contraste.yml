@@ -6,6 +6,7 @@ dependencies:
     - filter.format.full_html
 id: botao_de_contraste
 title: 'Botão de contraste'
+weight: 5
 content:
   value: '<div id="contrast-btn"><span class="material-icons">contrast</span></div>'
   format: full_html

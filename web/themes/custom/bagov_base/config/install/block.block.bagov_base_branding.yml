@@ -1,3 +1,4 @@
+uuid: 6cf96879-255d-4d78-8d12-2e053749f9de
 langcode: pt-br
 status: true
 dependencies:
@@ -20,4 +21,3 @@ settings:
   use_site_name: false
   use_site_slogan: false
 visibility: {  }
-

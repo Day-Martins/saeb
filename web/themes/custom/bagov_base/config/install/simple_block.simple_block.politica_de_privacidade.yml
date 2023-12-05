@@ -6,6 +6,7 @@ dependencies:
     - filter.format.full_html
 id: politica_de_privacidade
 title: 'Politica de Privacidade'
+weight: 5
 content:
   value: '<p><a href="https://www.ba.gov.br/politica-privacidade">POLITICA DE PRIVACIDADE</a></p>'
   format: full_html

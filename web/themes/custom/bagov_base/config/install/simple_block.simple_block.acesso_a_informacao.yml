@@ -6,6 +6,7 @@ dependencies:
     - filter.format.full_html
 id: acesso_a_informacao
 title: 'Acesso à Informação'
+weight: 5
 content:
   value: '<div class="top-link-info"><a href="https://www.comunicacao.ba.gov.br/lei-de-acesso-a-informacao" target="_blank"><span class="material-icons-outlined">info</span><span class="block-icon-text"> ACESSO À INFORMAÇÃO</span></a></div>'
   format: full_html
