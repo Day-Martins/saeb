@@ -1,0 +1,6 @@
+bagov_base_blocks.settings:
+  path: '/admin/config/user-interface/bagov-base'
+  defaults:
+    _form: 'Drupal\bagov_base_blocks\Form\BagovBaseBlocksSettingsForm'
+  requirements:
+    _permission: 'administer bagov_base'

@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Bagov Base Blocks module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_theme().
+ */
+function bagov_base_blocks_theme()
+{
+    return [
+        'contrast_block' => [
+            'render element' => 'content',
+        ],
+    ];
+}
+
+/**
+ * Prepares variables for constrast templates.
+ *
+ * Default template: contrast-block.html.twig.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - content: The content to print.
+ */
+function template_preprocess_contrast_block(array &$variables)
+{
+    $variables['content'] = [
+        'output' => t('<div id="contrast-btn"><i class="fa fa-adjust" aria-hidden="true"></i></div>'),
+    ];
+
+    \Drupal::service('renderer')->render($variables);
+}

@@ -1,0 +1,7 @@
+name: Bagov Base Blocks
+type: module
+description: Custom blocks for components related to Bagov Base Theme Sites
+package: Bagov Base
+core: 8.x
+core_version_requirement: ^10
+configure: bagov_base_blocks.settings

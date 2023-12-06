@@ -1,0 +1,12 @@
+# Custom module library for general purposes.
+bagov_base_contrast_block:
+  js:
+    js/contrast.js: {}
+  css:
+    theme:
+      css/contrast.css: {}
+  dependencies:
+    - core/once
+    - core/drupal
+    - core/drupalSettings
+
