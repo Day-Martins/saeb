@@ -74,7 +74,8 @@ if [[ $input == "Y" || $input == "y" ]]; then
 else
     install_with_configs
 fi
-drush -y -l http://$SITE_NAME.multisite.local cim
+#drush -y -l http://$SITE_NAME.multisite.local cex
+#drush -y -l http://$SITE_NAME.multisite.local cim
 drush -y -l http://$SITE_NAME.multisite.local cr
 
 #Check if into a WSL or not and add site to hosts file
