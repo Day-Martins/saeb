@@ -1,0 +1,20 @@
+uuid: 9540bfa4-b821-48b2-96cf-993eee08a1f1
+langcode: pt-br
+status: true
+dependencies: {  }
+id: bagov_development_split
+label: 'Bagov Development Split'
+description: 'Bagov Development Split'
+weight: 0
+stackable: false
+no_patching: true
+storage: folder
+folder: ../config/envs/dev
+module:
+  devel: 0
+theme: {  }
+complete_list:
+  - devel.settings
+  - devel.toolbar.settings
+  - system.menu.devel
+partial_list: {  }

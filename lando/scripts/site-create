@@ -8,7 +8,7 @@ RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[0;33m'
 CYAN='\033[0;36m'
-
+ 
 #Functions
 install_with_db() {
     #Import a base database to new site
@@ -30,8 +30,7 @@ install_with_configs() {
     drush -y -l http://$SITE_NAME.multisite.local pm:install search, layout_builder, layout_discovery, media, media_library, datetime_range
     #install contrib modules
     printf "${CYAN}Instalando módulos contrib${NC}\n"
-    drush -y -l http://$SITE_NAME.multisite.local pm:install text_resize, simple_block, admin_toolbar, admin_toolbar_tools, material_icons, config_filter, config_split, bootstrap_layouts, pathauto, ds, views_bootstrap
-    drush -y -l http://$SITE_NAME.multisite.local cdel material_icons.settings
+    drush -y -l http://$SITE_NAME.multisite.local pm:install text_resize, simple_block, admin_toolbar, admin_toolbar_tools, fontawesome, config_filter, config_split, bootstrap_layouts, pathauto, ds, views_bootstrap
     printf "${GREEN}Dependencias instaladas com sucesso${NC}\n"
 
     printf "${YELLOW}Instalando tema bagov_base no site $SITE_NAME${NC}\n"
@@ -43,8 +42,15 @@ install_with_configs() {
 
     printf "${YELLOW}Desinstalando tema olivero no site $SITE_NAME${NC}\n"
     drush -y -l http://$SITE_NAME.multisite.local theme:uninstall olivero
+
+    #Add splits config to settings.php
+    chmod 755 ./web/sites/$SITE_NAME/settings.php
+    printf '\n$config["config_split.config_split.bagov_development_split"]["status"] = TRUE;' >> ./web/sites/$SITE_NAME/settings.php
+    printf '\n$config["config_split.config_split.bagov_base_split"]["status"] = TRUE;' >> ./web/sites/$SITE_NAME/settings.php
+    chmod 444 ./web/sites/$SITE_NAME/settings.php
 }
 
+    
 #Create a multisite file if dont exists
 MS_FILE=./web/sites/sites.php
 if [ ! -f "$MS_FILE" ]; then
@@ -68,7 +74,7 @@ if [[ $input == "Y" || $input == "y" ]]; then
 else
     install_with_configs
 fi
-
+drush -y -l http://$SITE_NAME.multisite.local cim
 drush -y -l http://$SITE_NAME.multisite.local cr
 
 #Check if into a WSL or not and add site to hosts file

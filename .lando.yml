@@ -39,6 +39,10 @@ tooling:
     service: appserver
     description: Configure a new Drupal site
     cmd: lando/scripts/site-create
+  sc <brand>:
+    service: appserver
+    description: Configure a new Drupal site
+    cmd: lando/scripts/site-create
 proxy:
   appserver:
     - saeb.multisite.local
