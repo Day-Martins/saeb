@@ -49,6 +49,10 @@ color: white;
 width: fit-content;
 /* padding-top: 10px; */
 /* } */
+.region-header {
+display: flex;
+}
+
 .region-header > * {
 width: fit-content;
 padding-top: 10px;
@@ -90,8 +94,8 @@ padding: 60px 0 0;
 }
 
 .footer-info{
-  background-color: var(--bs-white);
-  font-size: 12px;
+background-color: var(--bs-white);
+font-size: 12px;
 }
 
 .menu--footer{

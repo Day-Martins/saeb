@@ -4,6 +4,6 @@ bagov_base_blocks.settings:
   type: config_object
   label: 'Bagov Base settings'
   mapping:
-    text_resize_reset_button:
+    enable_contrast_button:
       type: boolean
       label: 'Display contrast button'

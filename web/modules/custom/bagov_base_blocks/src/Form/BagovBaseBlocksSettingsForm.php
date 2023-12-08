@@ -40,6 +40,12 @@ class BagovBaseBlocksSettingsForm extends ConfigFormBase
             '#default_value' => $config->get('constrast_enable'),
             '#description' => $this->t('Enable contrast block?'),
         ];
+        $form['information_access_enable'] = [
+            '#type' => 'checkbox',
+            '#title' => $this->t('Enable Information Access'),
+            '#default_value' => $config->get('information_access_enable'),
+            '#description' => $this->t('Enable Information Access block?'),
+        ];
         return parent::buildForm($form, $form_state);
     }
 
@@ -51,6 +57,9 @@ class BagovBaseBlocksSettingsForm extends ConfigFormBase
         parent::submitForm($form, $form_state);
         $this->config('bagov_base_blocks.settings')
             ->set('constrast_enable', $form_state->getValue('constrast_enable'))
+            ->save();
+        $this->config('bagov_base_blocks.settings')
+            ->set('information_access_enable', $form_state->getValue('information_access_enable'))
             ->save();
     }
 }
