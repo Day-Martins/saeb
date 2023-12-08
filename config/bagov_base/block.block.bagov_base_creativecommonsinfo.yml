@@ -1,0 +1,20 @@
+uuid: 55892c16-a585-4e56-86ec-279b5c11c435
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - bagov_base_blocks
+  theme:
+    - bagov_base
+id: bagov_base_creativecommonsinfo
+theme: bagov_base
+region: footer_info
+weight: 0
+provider: null
+plugin: select_creative_commons_block
+settings:
+  id: select_creative_commons_block
+  label: 'Creative Commons Info'
+  label_display: '0'
+  provider: bagov_base_blocks
+visibility: {  }

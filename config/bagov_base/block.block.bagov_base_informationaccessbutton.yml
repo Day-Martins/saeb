@@ -1,0 +1,20 @@
+uuid: 7a410c0a-2bc3-44c4-96e5-0fffa54de271
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - bagov_base_blocks
+  theme:
+    - bagov_base
+id: bagov_base_informationaccessbutton
+theme: bagov_base
+region: header
+weight: -7
+provider: null
+plugin: information_access_block
+settings:
+  id: information_access_block
+  label: 'Information Access Button'
+  label_display: '0'
+  provider: bagov_base_blocks
+visibility: {  }

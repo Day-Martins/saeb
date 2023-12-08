@@ -1,0 +1,20 @@
+uuid: 98208718-8a74-473f-925d-8403a728af32
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bagov_base
+id: bagov_base_messages
+theme: bagov_base
+region: content
+weight: -4
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Mensagens de status'
+  label_display: '0'
+  provider: system
+visibility: {  }

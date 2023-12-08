@@ -1,0 +1,20 @@
+uuid: a5829f92-cf15-4d16-bd55-9af6658c1678
+langcode: pt-br
+status: true
+dependencies:
+  theme:
+    - bagov_base
+id: bagov_base_primary_local_tasks
+theme: bagov_base
+region: content
+weight: -8
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Abas primárias'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

@@ -1,0 +1,41 @@
+uuid: a21f97a2-9672-43fa-a627-a05a45cd638f
+langcode: pt-br
+status: true
+dependencies: {  }
+id: bagov_base_split
+label: 'Bagov Base Split'
+description: 'Bagov Base Split'
+weight: 0
+stackable: false
+no_patching: true
+storage: folder
+folder: ../config/bagov_base
+module:
+  bagov_base_blocks: 0
+theme: {  }
+complete_list:
+  - bagov_base_blocks.settings
+  - block.block.bagov_base_account_menu
+  - block.block.bagov_base_breadcrumbs
+  - block.block.bagov_base_content
+  - block.block.bagov_base_contrastbutton
+  - block.block.bagov_base_creativecommonsinfo
+  - block.block.bagov_base_definicaodemarcadosite
+  - block.block.bagov_base_help
+  - block.block.bagov_base_informationaccessbutton
+  - block.block.bagov_base_logodoestado
+  - block.block.bagov_base_main_menu
+  - block.block.bagov_base_messages
+  - block.block.bagov_base_page_title
+  - block.block.bagov_base_primary_admin_actions
+  - block.block.bagov_base_primary_local_tasks
+  - block.block.bagov_base_rodape
+  - block.block.bagov_base_search_form_wide
+  - block.block.bagov_base_secondary_local_tasks
+  - block.block.bagov_base_selectsecretaria
+  - block.block.bagov_base_textresize
+  - block.block.bagov_base_powered
+  - block.block.bagov_base_search_form_narrow
+  - block.block.bagov_base_site_branding
+  - block.block.bagov_base_syndicate
+partial_list: {  }

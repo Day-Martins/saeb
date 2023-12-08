@@ -1,0 +1,18 @@
+uuid: abc63d36-5d4c-43df-b351-952cf481ff36
+langcode: pt-br
+status: true
+dependencies:
+  theme:
+    - bagov_base
+id: bagov_base_page_title
+theme: bagov_base
+region: content
+weight: -9
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Título da página'
+  label_display: '0'
+  provider: core
+visibility: {  }

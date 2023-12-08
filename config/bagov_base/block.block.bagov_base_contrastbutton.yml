@@ -1,0 +1,20 @@
+uuid: a1a946dc-cab8-42fd-98fe-bebb1845dc47
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - bagov_base_blocks
+  theme:
+    - bagov_base
+id: bagov_base_contrastbutton
+theme: bagov_base
+region: header
+weight: -8
+provider: null
+plugin: contrast_block
+settings:
+  id: contrast_block
+  label: 'Contrast Button'
+  label_display: '0'
+  provider: bagov_base_blocks
+visibility: {  }

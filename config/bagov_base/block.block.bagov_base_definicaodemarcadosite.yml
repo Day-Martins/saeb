@@ -1,0 +1,23 @@
+uuid: 89ab4ab2-04a1-4f74-99bc-864ccdf74d44
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bagov_base
+id: bagov_base_definicaodemarcadosite
+theme: bagov_base
+region: nav_branding
+weight: -8
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Definição de marca do site'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

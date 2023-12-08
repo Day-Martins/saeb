@@ -1,0 +1,53 @@
+uuid: 87e5abb5-e2f3-470d-b724-27599a39cdaa
+langcode: pt-br
+status: true
+dependencies: {  }
+id: default_split
+label: 'Default Split'
+description: 'Todas as configurações comuns entre os sites'
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../config/default
+module: {  }
+theme: {  }
+complete_list:
+  - block.block.bootstrap5_account_menu
+  - block.block.bootstrap5_branding
+  - block.block.bootstrap5_breadcrumbs
+  - block.block.bootstrap5_content
+  - block.block.bootstrap5_footer
+  - block.block.bootstrap5_help
+  - block.block.bootstrap5_local_actions
+  - block.block.bootstrap5_local_tasks
+  - block.block.bootstrap5_main_navigation
+  - block.block.bootstrap5_messages
+  - block.block.bootstrap5_page_title
+  - block.block.bootstrap5_powered_by_drupal
+  - block.block.bootstrap5_search_form
+  - block.block.claro_breadcrumbs
+  - block.block.claro_content
+  - block.block.claro_help
+  - block.block.claro_local_actions
+  - block.block.claro_messages
+  - block.block.claro_page_title
+  - block.block.claro_primary_local_tasks
+  - block.block.claro_secondary_local_tasks
+  - bootstrap5.settings
+  - claro.settings
+  - config_split.config_split.bagov_base_split
+  - config_split.config_split.bagov_development_split
+  - config_split.config_split.default_split
+  - core.extension
+  - dblog.settings
+  - ds.settings
+  - fontawesome.settings
+  - olivero.settings
+  - pathauto.settings
+  - system.maintenance
+  - system.theme
+  - system.theme.global
+  - text_resize.settings
+  - update.settings
+partial_list: {  }

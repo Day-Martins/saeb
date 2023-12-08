@@ -1,0 +1,20 @@
+uuid: 01df50b3-a9f9-44c7-8b2e-d5b9e9bcb9c8
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - bagov_base
+id: bagov_base_help
+theme: bagov_base
+region: content
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Ajuda
+  label_display: '0'
+  provider: help
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: 7cbcdd2f-28bb-4afb-9786-7240de440898
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bagov_base
+id: bagov_base_content
+theme: bagov_base
+region: content
+weight: -6
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Conteúdo da página principal'
+  label_display: '0'
+  provider: system
+visibility: {  }

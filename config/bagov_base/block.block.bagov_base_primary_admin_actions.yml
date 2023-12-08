@@ -1,0 +1,18 @@
+uuid: 723ab562-ad3a-48cd-947a-ff1cb2b632d1
+langcode: pt-br
+status: true
+dependencies:
+  theme:
+    - bagov_base
+id: bagov_base_primary_admin_actions
+theme: bagov_base
+region: content
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Ações primárias do administrador'
+  label_display: '0'
+  provider: core
+visibility: {  }

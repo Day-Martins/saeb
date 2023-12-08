@@ -1,0 +1,21 @@
+uuid: 0442fa11-198e-479f-b546-7140fd98f4dd
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - bagov_base
+id: bagov_base_search_form_wide
+theme: bagov_base
+region: nav_additional
+weight: -10
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Formulário de busca (largo)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }
