@@ -45,10 +45,6 @@ color: white;
 color: white;
 }
 
-/* #block-padrao-noticias-textresize {
-width: fit-content;
-/* padding-top: 10px; */
-/* } */
 .region-header {
 display: flex;
 }
@@ -135,7 +131,6 @@ text-decoration: none;
 
 header{
 border-bottom: 2px solid var(--turquesa);
-/* margin: 10px 0 10px 0; */
 }
 
 .flex-float-right{
