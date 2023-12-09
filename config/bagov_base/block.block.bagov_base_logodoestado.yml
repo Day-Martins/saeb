@@ -9,7 +9,7 @@ dependencies:
 id: bagov_base_logodoestado
 theme: bagov_base
 region: footer_left
-weight: 0
+weight: -11
 provider: null
 plugin: logo_estado_block
 settings:

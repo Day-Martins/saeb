@@ -16,13 +16,13 @@ theme: {  }
 complete_list:
   - bagov_base_blocks.settings
   - block.block.bagov_base_account_menu
+  - block.block.bagov_base_acessoainformacao
   - block.block.bagov_base_breadcrumbs
   - block.block.bagov_base_content
   - block.block.bagov_base_contrastbutton
   - block.block.bagov_base_creativecommonsinfo
   - block.block.bagov_base_definicaodemarcadosite
   - block.block.bagov_base_help
-  - block.block.bagov_base_informationaccessbutton
   - block.block.bagov_base_logodoestado
   - block.block.bagov_base_main_menu
   - block.block.bagov_base_messages
@@ -34,6 +34,7 @@ complete_list:
   - block.block.bagov_base_secondary_local_tasks
   - block.block.bagov_base_selectsecretaria
   - block.block.bagov_base_textresize
+  - block.block.bagov_base_informationaccessbutton
   - block.block.bagov_base_powered
   - block.block.bagov_base_search_form_narrow
   - block.block.bagov_base_site_branding

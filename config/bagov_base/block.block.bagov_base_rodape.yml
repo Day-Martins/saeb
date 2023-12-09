@@ -10,8 +10,8 @@ dependencies:
     - bagov_base
 id: bagov_base_rodape
 theme: bagov_base
-region: footer_middle
-weight: 0
+region: footer_right
+weight: -10
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

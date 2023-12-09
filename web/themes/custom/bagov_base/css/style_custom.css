@@ -103,7 +103,17 @@ width: 100%;
 }
 
 div[class*="region-footer-"]{
+color: var(--bs-white);
 padding: 10px 25px;
+}
+
+div[class*="region-footer-"] a{
+color: var(--bs-white);
+}
+
+.region-footer-info,
+.region-footer-info a{
+color: var(--bs-black)!important;
 }
 
 .footer-menu--item{

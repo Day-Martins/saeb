@@ -1,4 +1,4 @@
-uuid: 7a410c0a-2bc3-44c4-96e5-0fffa54de271
+uuid: bade87f2-a998-457a-b5d4-c21f0483ed23
 langcode: pt-br
 status: true
 dependencies:
@@ -6,15 +6,15 @@ dependencies:
     - bagov_base_blocks
   theme:
     - bagov_base
-id: bagov_base_informationaccessbutton
+id: bagov_base_acessoainformacao
 theme: bagov_base
 region: header
 weight: -7
 provider: null
-plugin: information_access_block
+plugin: acesso_informacao_block
 settings:
-  id: information_access_block
-  label: 'Information Access Button'
+  id: acesso_informacao_block
+  label: 'Acesso a Informação'
   label_display: '0'
   provider: bagov_base_blocks
 visibility: {  }

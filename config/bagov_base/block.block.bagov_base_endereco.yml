@@ -1,0 +1,22 @@
+uuid: e880785c-7cd2-4259-87e3-9617bc889ffb
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - simple_block.simple_block.endereco
+  module:
+    - simple_block
+  theme:
+    - bagov_base
+id: bagov_base_endereco
+theme: bagov_base
+region: footer_middle
+weight: -10
+provider: null
+plugin: 'simple_block:endereco'
+settings:
+  id: 'simple_block:endereco'
+  label: Endereço
+  label_display: '0'
+  provider: simple_block
+visibility: {  }
