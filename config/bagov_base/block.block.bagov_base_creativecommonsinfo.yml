@@ -14,7 +14,7 @@ provider: null
 plugin: select_creative_commons_block
 settings:
   id: select_creative_commons_block
-  label: 'Creative Commons Info'
+  label: 'Creative Commons Info - Ba.Gov'
   label_display: '0'
   provider: bagov_base_blocks
 visibility: {  }

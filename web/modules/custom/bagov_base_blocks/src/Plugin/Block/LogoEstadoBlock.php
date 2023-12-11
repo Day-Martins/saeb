@@ -10,7 +10,7 @@ use Drupal\Core\Session\AccountInterface;
  *
  * @Block(
  *   id = "logo_estado_block",
- *   admin_label = @Translation("Logo do Estado"),
+ *   admin_label = @Translation("Logo do Estado - Ba.Gov"),
  * )
  */
 class LogoEstadoBlock extends BlockBase {

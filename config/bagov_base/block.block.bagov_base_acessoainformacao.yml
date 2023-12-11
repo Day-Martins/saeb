@@ -14,7 +14,7 @@ provider: null
 plugin: acesso_informacao_block
 settings:
   id: acesso_informacao_block
-  label: 'Acesso a Informação'
+  label: 'Acesso a Informação - Ba.Gov'
   label_display: '0'
   provider: bagov_base_blocks
 visibility: {  }

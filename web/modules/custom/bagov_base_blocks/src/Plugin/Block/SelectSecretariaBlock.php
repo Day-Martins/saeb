@@ -10,7 +10,7 @@ use Drupal\Core\Session\AccountInterface;
  *
  * @Block(
  *   id = "select_secretaria_block",
- *   admin_label = @Translation("Select Secretaria"),
+ *   admin_label = @Translation("Select Secretarias - Ba.Gov"),
  * )
  */
 class SelectSecretariaBlock extends BlockBase {

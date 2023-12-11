@@ -5,3 +5,6 @@ package: Bagov Base
 core: 8.x
 core_version_requirement: ^10
 configure: bagov_base_blocks.settings
+dependencies:
+ - drupal:block
+ - drupal:config

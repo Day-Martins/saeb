@@ -49,16 +49,16 @@ color: white;
 display: flex;
 }
 
-.region-header > * {
-width: fit-content;
+.region-header > *:not(:first-child){
 padding-top: 10px;
+margin-left: 30px
 }
 
 #contrast-btn{
 cursor: pointer;
 }
 
-.top-link-info a{
+div[class*="top-link-"] a{
 text-decoration: none;
 }
 
@@ -145,4 +145,12 @@ border-bottom: 2px solid var(--turquesa);
 
 .flex-float-right{
 margin-left: auto;
+}
+
+.block-social-network{
+display: flex;
+}
+
+.block-social-network ul li{
+display: inline-flex;
 }

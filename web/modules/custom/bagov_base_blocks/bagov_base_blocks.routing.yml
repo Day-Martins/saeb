@@ -1,5 +1,11 @@
 bagov_base_blocks.settings:
-  path: '/admin/config/user-interface/bagov-base'
+  path: '/admin/structure/bagov-base'
+  defaults:
+    _form: 'Drupal\bagov_base_blocks\Form\BagovBaseBlocksSettingsForm'
+  requirements:
+    _permission: 'administer bagov_base'
+bagov_base_blocks.social_network.settings:
+  path: '/admin/structure/bagov-base/social-network'
   defaults:
     _form: 'Drupal\bagov_base_blocks\Form\BagovBaseBlocksSettingsForm'
   requirements:

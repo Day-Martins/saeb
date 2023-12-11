@@ -1,0 +1,7 @@
+block.settings.social_network_block:
+  type: block_settings
+  label: 'Redes Sociais Ba.Gov'
+  mapping:
+    social_network:
+      type: string
+      label: 'Name of the person to say hello to'

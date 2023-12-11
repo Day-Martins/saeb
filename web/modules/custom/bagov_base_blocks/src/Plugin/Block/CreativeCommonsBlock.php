@@ -10,7 +10,7 @@ use Drupal\Core\Session\AccountInterface;
  *
  * @Block(
  *   id = "select_creative_commons_block",
- *   admin_label = @Translation("Creative Commons Info"),
+ *   admin_label = @Translation("Creative Commons Info - Ba.Gov"),
  * )
  */
 class CreativeCommonsBlock extends BlockBase {

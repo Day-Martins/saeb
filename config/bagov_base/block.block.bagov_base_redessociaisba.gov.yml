@@ -1,0 +1,36 @@
+uuid: 49857165-5b53-4a96-92ae-6f1407c66fb5
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - bagov_base_blocks
+  theme:
+    - bagov_base
+id: bagov_base_redessociaisba.gov
+theme: bagov_base
+region: header
+weight: 0
+provider: null
+plugin: block_socialnetwork_bagov
+settings:
+  id: block_socialnetwork_bagov
+  label: 'Redes Sociais - Ba.Gov'
+  label_display: '0'
+  provider: bagov_base_blocks
+  sn_instagram: 'https://www.instagram.com/saebgovba/'
+  si_instagram: 'fa-brands fa-square-instagram'
+  sn_youtube: 'https://www.youtube.com/saebgovba'
+  si_youtube: 'fa-brands fa-square-youtube'
+  sn_facebook: 'https://www.facebook.com/saebgovba'
+  si_facebook: 'fa-brands fa-square-facebook'
+  sn_flickr: ''
+  si_flickr: ''
+  sn_twitter: 'https://twitter.com/saebgovba'
+  si_twitter: 'fa-brands fa-square-twitter'
+  sn_whatsapp: ''
+  si_whatsapp: ''
+  sn_linkedin: ''
+  si_linkedin: ''
+  block_attributes:
+    row: row
+visibility: {  }

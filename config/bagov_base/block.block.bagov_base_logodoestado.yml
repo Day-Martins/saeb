@@ -14,7 +14,7 @@ provider: null
 plugin: logo_estado_block
 settings:
   id: logo_estado_block
-  label: 'Logo do Estado'
+  label: 'Logo do Estado - Ba.Gov'
   label_display: '0'
   provider: bagov_base_blocks
 visibility: {  }
