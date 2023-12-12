@@ -1,0 +1,16 @@
+#!/bin/bash
+
+SITE_NAME=$1
+
+#Colors to outputs
+NC='\033[0m' # No Color
+GREEN='\033[0;32m'
+CYAN='\033[0;36m'
+
+#Export site splited configs
+printf "${CYAN}Importando configurações dos splits configurados para $SITE_NAME${NC}\n"
+drush -y -l http://$SITE_NAME.multisite.local cim
+printf "${CYAN}Rodando update do banco $SITE_NAME${NC}\n"
+drush -y -l http://$SITE_NAME.multisite.local updb
+drush -y -l http://$SITE_NAME.multisite.local cr
+printf "${GREEN}O site $SITE_NAME foi atualizado com sucesso${NC}\n"

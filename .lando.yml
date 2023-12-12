@@ -43,6 +43,14 @@ tooling:
     service: appserver
     description: Configure a new Drupal site
     cmd: lando/scripts/site-create
+  site-update <brand>:
+    service: appserver
+    description: Update a Drupal site with splitted configs
+    cmd: lando/scripts/site-update
+  su <brand>:
+    service: appserver
+    description: Update a Drupal site with splitted configs
+    cmd: lando/scripts/site-update
 proxy:
   appserver:
     - saeb.multisite.local

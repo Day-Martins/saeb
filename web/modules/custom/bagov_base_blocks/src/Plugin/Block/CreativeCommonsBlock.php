@@ -13,26 +13,30 @@ use Drupal\Core\Session\AccountInterface;
  *   admin_label = @Translation("Creative Commons Info - Ba.Gov"),
  * )
  */
-class CreativeCommonsBlock extends BlockBase {
+class CreativeCommonsBlock extends BlockBase
+{
+    /**
+     * {@inheritdoc}
+     */
+    public function access(AccountInterface $account, $return_as_object = false)
+    {
+        $access = $this->blockAccess($account);
+        return $return_as_object ? $access : $access->isAllowed('access content');
+    }
 
-  /**
-   * {@inheritdoc}
-   */
-  public function access(AccountInterface $account, $return_as_object = FALSE) {
-    $access = $this->blockAccess($account);
-    return $return_as_object ? $access : $access->isAllowed('access content');
-  }
-
-  /**
-   * {@inheritdoc}
-   */
-  public function build() {
-    return [
-      '#theme' => 'creative_commons_block',
-      '#attached' => [
-        'library' => ['bagov_base_blocks/bagov_base_select_creative_commons_block'],
-      ],
-    ];
-  }
-
+    /**
+     * {@inheritdoc}
+     */
+    public function build()
+    {
+        $config = \Drupal::config('bagov_base_blocks.settings');
+        if ($config->get('creative_commons_enable')) {
+            return [
+                '#theme' => 'creative_commons_block',
+                '#attached' => [
+                    'library' => ['bagov_base_blocks/bagov_base_select_creative_commons_block'],
+                ],
+            ];
+        }
+    }
 }

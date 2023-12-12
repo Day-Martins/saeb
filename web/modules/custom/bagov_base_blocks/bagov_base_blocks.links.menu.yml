@@ -1,12 +1,6 @@
 bagov_base.list:
-  title: 'Bagov Base'
-  description: 'Configure Bagov Base UI settings.'
+  title: 'Ba.Gov Base Blocks'
+  description: 'Configuração dos blocos rápidos.'
   route_name: bagov_base_blocks.settings
   weight: 0
-  parent: system.admin_structure
-bagov_base.block_socialnetwork_bagov.list:
-  title: 'Redes Sociais'
-  description: 'Configurar Redes Sociais.'
-  route_name: bagov_base_blocks.social_network.settings
-  weight: 0
-  parent: bagov_base.list
+  parent: block.admin_display

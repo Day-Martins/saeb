@@ -13,26 +13,30 @@ use Drupal\Core\Session\AccountInterface;
  *   admin_label = @Translation("Acesso a Informação - Ba.Gov"),
  * )
  */
-class AcessoInformacaoBlock extends BlockBase {
+class AcessoInformacaoBlock extends BlockBase
+{
+    /**
+     * {@inheritdoc}
+     */
+    public function access(AccountInterface $account, $return_as_object = false)
+    {
+        $access = $this->blockAccess($account);
+        return $return_as_object ? $access : $access->isAllowed('access content');
+    }
 
-  /**
-   * {@inheritdoc}
-   */
-  public function access(AccountInterface $account, $return_as_object = FALSE) {
-    $access = $this->blockAccess($account);
-    return $return_as_object ? $access : $access->isAllowed('access content');
-  }
-
-  /**
-   * {@inheritdoc}
-   */
-  public function build() {
-    return [
-      '#theme' => 'acesso_informacao_block',
-      '#attached' => [
-        'library' => ['bagov_base_blocks/bagov_base_acesso_informacao_block'],
-      ],
-    ];
-  }
-
+    /**
+     * {@inheritdoc}
+     */
+    public function build()
+    {
+        $config = \Drupal::config('bagov_base_blocks.settings');
+        if ($config->get('acesso_informacao_enable')) {
+            return [
+                '#theme' => 'acesso_informacao_block',
+                '#attached' => [
+                    'library' => ['bagov_base_blocks/bagov_base_acesso_informacao_block'],
+                ],
+            ];
+        }
+    }
 }

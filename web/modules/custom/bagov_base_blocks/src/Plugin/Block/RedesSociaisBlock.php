@@ -103,7 +103,10 @@ class RedesSociaisBlock extends BlockBase
             '#attributes' => ['class' => 'list-unstyled'],
         ];
 
-        return $output;
+        $config = \Drupal::config('bagov_base_blocks.settings');
+        if ($config->get('redes_sociais_enable')) {
+            return $output;
+        }
     }
 
     /**
