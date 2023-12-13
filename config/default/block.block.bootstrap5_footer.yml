@@ -8,8 +8,6 @@ dependencies:
     - system
   theme:
     - bootstrap5
-_core:
-  default_config_hash: xBR1vgpnqSUW4pA2LC3rfhu27FQUox9zZEYsdAFM2Sg
 id: bootstrap5_footer
 theme: bootstrap5
 region: footer

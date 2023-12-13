@@ -1,0 +1,11 @@
+uuid: 373fb2fb-b4ce-468b-945c-4eb4db178be7
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.noticia
+id: node.noticia
+target_entity_type_id: node
+target_bundle: noticia
+default_langcode: site_default
+language_alterable: false

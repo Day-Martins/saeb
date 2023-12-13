@@ -1,0 +1,32 @@
+uuid: ae75d3f5-eb8c-489c-896d-f0334ed36a39
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.full
+    - field.field.media.document.field_descricao_do_documento
+    - field.field.media.document.field_media_document
+    - media.type.document
+  module:
+    - file
+_core:
+  default_config_hash: XxUyhaTuM0OUUZpr8G6jdrFBEh5eag7auWxBKhm6cvY
+id: media.document.full
+targetEntityType: media
+bundle: document
+mode: full
+content:
+  field_media_document:
+    type: file_default
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  created: true
+  field_descricao_do_documento: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

@@ -1,0 +1,19 @@
+uuid: ccdccc82-72fb-4f18-aaed-e59e24cc90ac
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_descricao_do_documento
+    - media.type.document
+id: media.document.field_descricao_do_documento
+field_name: field_descricao_do_documento
+entity_type: media
+bundle: document
+label: 'Descrição do Documento'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

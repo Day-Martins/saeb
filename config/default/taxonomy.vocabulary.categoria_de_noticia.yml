@@ -1,0 +1,8 @@
+uuid: 64ac1b0c-8617-4ec1-90cb-6c8b4f86a3b0
+langcode: pt-br
+status: true
+dependencies: {  }
+name: 'Categoria Notícia'
+vid: categoria_de_noticia
+description: ''
+weight: 0

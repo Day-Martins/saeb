@@ -1,0 +1,33 @@
+uuid: 5e53f463-eafc-4fdc-91d5-0fe0a80d806b
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.lista_migrada.body
+    - field.field.node.lista_migrada.field_categorias_lista_migrada
+    - node.type.lista_migrada
+  module:
+    - text
+    - user
+id: node.lista_migrada.teaser
+targetEntityType: node
+bundle: lista_migrada
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_categorias_lista_migrada: true
+  langcode: true

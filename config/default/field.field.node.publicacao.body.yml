@@ -1,0 +1,24 @@
+uuid: 581af8e7-8564-46b9-a1a8-4ec19f87e38a
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.publicacao
+  module:
+    - text
+id: node.publicacao.body
+field_name: body
+entity_type: node
+bundle: publicacao
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

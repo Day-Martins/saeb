@@ -39,15 +39,136 @@ complete_list:
   - config_split.config_split.bagov_base_split
   - config_split.config_split.bagov_development_split
   - config_split.config_split.default_split
+  - core.entity_form_display.comment.comment.default
+  - core.entity_form_display.media.audio.default
+  - core.entity_form_display.media.audio.media_library
+  - core.entity_form_display.media.document.default
+  - core.entity_form_display.media.document.media_library
+  - core.entity_form_display.media.image.default
+  - core.entity_form_display.media.image.media_library
+  - core.entity_form_display.media.remote_video.default
+  - core.entity_form_display.media.remote_video.media_library
+  - core.entity_form_display.media.video.default
+  - core.entity_form_display.media.video.media_library
+  - core.entity_form_display.node.article.default
+  - core.entity_form_display.node.banner.default
+  - core.entity_form_display.node.lista_migrada.default
+  - core.entity_form_display.node.midia.default
+  - core.entity_form_display.node.noticia.default
+  - core.entity_form_display.node.page.default
+  - core.entity_form_display.node.publicacao.default
+  - core.entity_view_display.comment.comment.default
+  - core.entity_view_display.media.audio.default
+  - core.entity_view_display.media.audio.media_library
+  - core.entity_view_display.media.document.default
+  - core.entity_view_display.media.document.full
+  - core.entity_view_display.media.document.media_library
+  - core.entity_view_display.media.image.default
+  - core.entity_view_display.media.image.media_library
+  - core.entity_view_display.media.remote_video.default
+  - core.entity_view_display.media.remote_video.media_library
+  - core.entity_view_display.media.video.default
+  - core.entity_view_display.media.video.media_library
+  - core.entity_view_display.node.article.default
+  - core.entity_view_display.node.article.rss
+  - core.entity_view_display.node.article.teaser
+  - core.entity_view_display.node.banner.default
+  - core.entity_view_display.node.banner.teaser
+  - core.entity_view_display.node.lista_migrada.default
+  - core.entity_view_display.node.lista_migrada.teaser
+  - core.entity_view_display.node.midia.default
+  - core.entity_view_display.node.midia.teaser
+  - core.entity_view_display.node.noticia.default
+  - core.entity_view_display.node.noticia.teaser
+  - core.entity_view_display.node.page.default
+  - core.entity_view_display.node.page.teaser
+  - core.entity_view_display.node.publicacao.default
+  - core.entity_view_display.node.publicacao.teaser
   - core.extension
   - dblog.settings
   - ds.settings
+  - field.field.block_content.basic.body
+  - field.field.comment.comment.comment_body
+  - field.field.media.audio.field_media_audio_file
+  - field.field.media.document.field_descricao_do_documento
+  - field.field.media.document.field_media_document
+  - field.field.media.image.field_media_image
+  - field.field.media.remote_video.field_media_oembed_video
+  - field.field.media.video.field_media_video_file
+  - field.field.node.article.body
+  - field.field.node.article.comment
+  - field.field.node.article.field_image
+  - field.field.node.article.field_tags
+  - field.field.node.banner.body
+  - field.field.node.banner.field_imagem_do_banner
+  - field.field.node.banner.field_link_do_banner
+  - field.field.node.lista_migrada.body
+  - field.field.node.lista_migrada.field_categorias_lista_migrada
+  - field.field.node.midia.body
+  - field.field.node.noticia.body
+  - field.field.node.noticia.field_anexo_noticia
+  - field.field.node.noticia.field_categorias_noticia
+  - field.field.node.noticia.field_fonte_noticia
+  - field.field.node.noticia.field_imagem_destaque_noticia
+  - field.field.node.page.body
+  - field.field.node.publicacao.body
+  - field.field.node.publicacao.field_categorias_publicacao
+  - field.field.node.publicacao.field_midias_publicacao
+  - field.field.user.user.user_picture
+  - field.settings
+  - field.storage.block_content.body
+  - field.storage.comment.comment_body
+  - field.storage.media.field_descricao_do_documento
+  - field.storage.media.field_media_audio_file
+  - field.storage.media.field_media_document
+  - field.storage.media.field_media_image
+  - field.storage.media.field_media_oembed_video
+  - field.storage.media.field_media_video_file
+  - field.storage.node.body
+  - field.storage.node.comment
+  - field.storage.node.field_anexo_noticia
+  - field.storage.node.field_categorias_lista_migrada
+  - field.storage.node.field_categorias_noticia
+  - field.storage.node.field_categorias_publicacao
+  - field.storage.node.field_fonte_noticia
+  - field.storage.node.field_image
+  - field.storage.node.field_imagem_destaque_noticia
+  - field.storage.node.field_imagem_do_banner
+  - field.storage.node.field_link_do_banner
+  - field.storage.node.field_midias_publicacao
+  - field.storage.node.field_tags
+  - field.storage.user.user_picture
   - fontawesome.settings
+  - language.content_settings.node.banner
+  - language.content_settings.node.lista_migrada
+  - language.content_settings.node.midia
+  - language.content_settings.node.noticia
+  - language.content_settings.node.publicacao
+  - language.content_settings.path_alias.path_alias
+  - language.content_settings.taxonomy_term.categoria_de_noticia
+  - language.content_settings.taxonomy_term.categoria_lista_migrada
+  - language.content_settings.taxonomy_term.categoria_publicacao
+  - media.settings
+  - media.type.audio
+  - media.type.document
+  - media.type.image
+  - media.type.remote_video
+  - node.type.article
+  - node.type.banner
+  - node.type.lista_migrada
+  - node.type.midia
+  - node.type.noticia
+  - node.type.page
+  - node.type.publicacao
   - olivero.settings
   - pathauto.settings
   - system.maintenance
   - system.theme
   - system.theme.global
+  - taxonomy.vocabulary.categoria_de_noticia
+  - taxonomy.vocabulary.categoria_lista_migrada
+  - taxonomy.vocabulary.categoria_publicacao
+  - taxonomy.vocabulary.tags
   - text_resize.settings
   - update.settings
 partial_list: {  }

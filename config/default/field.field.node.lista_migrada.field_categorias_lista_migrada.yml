@@ -1,0 +1,29 @@
+uuid: b8bf83b3-86d6-4ee4-a174-785128112828
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_categorias_lista_migrada
+    - node.type.lista_migrada
+    - taxonomy.vocabulary.categoria_lista_migrada
+id: node.lista_migrada.field_categorias_lista_migrada
+field_name: field_categorias_lista_migrada
+entity_type: node
+bundle: lista_migrada
+label: Categorias
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categoria_lista_migrada: categoria_lista_migrada
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

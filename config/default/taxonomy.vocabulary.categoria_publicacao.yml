@@ -1,0 +1,8 @@
+uuid: 3444db24-7c96-4b9f-927e-8b0aa83c88fc
+langcode: pt-br
+status: true
+dependencies: {  }
+name: 'Categoria Publicação'
+vid: categoria_publicacao
+description: ''
+weight: 0

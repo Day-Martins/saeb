@@ -1,0 +1,38 @@
+uuid: a911a95f-a262-487f-b19d-f35006302eed
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.node.lista_migrada.body
+    - field.field.node.lista_migrada.field_categorias_lista_migrada
+    - node.type.lista_migrada
+  module:
+    - text
+    - user
+id: node.lista_migrada.default
+targetEntityType: node
+bundle: lista_migrada
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_categorias_lista_migrada:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

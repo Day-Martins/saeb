@@ -1,0 +1,24 @@
+uuid: 56de5f79-791f-4316-a2f9-09a3cf37f1bf
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.lista_migrada
+  module:
+    - text
+id: node.lista_migrada.body
+field_name: body
+entity_type: node
+bundle: lista_migrada
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

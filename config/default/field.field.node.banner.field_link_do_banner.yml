@@ -1,0 +1,23 @@
+uuid: 460e5e1d-8de4-49cf-88eb-bbf36d838fa2
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_do_banner
+    - node.type.banner
+  module:
+    - link
+id: node.banner.field_link_do_banner
+field_name: field_link_do_banner
+entity_type: node
+bundle: banner
+label: 'Link do banner'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

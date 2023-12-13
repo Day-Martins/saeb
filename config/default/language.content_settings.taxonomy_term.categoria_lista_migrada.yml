@@ -1,0 +1,11 @@
+uuid: 24ec76f9-c83d-40ce-bc08-2bd87fb13d49
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_lista_migrada
+id: taxonomy_term.categoria_lista_migrada
+target_entity_type_id: taxonomy_term
+target_bundle: categoria_lista_migrada
+default_langcode: site_default
+language_alterable: false

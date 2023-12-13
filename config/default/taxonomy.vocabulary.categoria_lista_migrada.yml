@@ -1,0 +1,8 @@
+uuid: ddf1202b-3044-4f03-bed9-7f996c069e61
+langcode: pt-br
+status: true
+dependencies: {  }
+name: 'Categoria Lista Migrada'
+vid: categoria_lista_migrada
+description: ''
+weight: 0

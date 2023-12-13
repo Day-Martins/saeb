@@ -1,0 +1,31 @@
+uuid: cbdc29d8-1477-4d8a-94b6-8b2000c000d0
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_midias_publicacao
+    - media.type.document
+    - media.type.image
+    - node.type.publicacao
+id: node.publicacao.field_midias_publicacao
+field_name: field_midias_publicacao
+entity_type: node
+bundle: publicacao
+label: Mídias
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: document
+field_type: entity_reference

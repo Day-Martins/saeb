@@ -1,2 +1,7 @@
 langcode: pt-br
-constrast_enable: true
+constrast_enable: 1
+acesso_informacao_enable: 1
+creative_commons_enable: 1
+logo_estado_enable: 1
+redes_sociais_enable: 1
+select_secretaria_enable: 1

@@ -1,0 +1,29 @@
+uuid: 68d61f96-c437-4e95-a4ee-cfdca807c44c
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.node.midia.body
+    - node.type.midia
+  module:
+    - text
+    - user
+id: node.midia.default
+targetEntityType: node
+bundle: midia
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

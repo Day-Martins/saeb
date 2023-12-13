@@ -14,6 +14,7 @@ module:
   bagov_base_blocks: 0
 theme: {  }
 complete_list:
+  - bagov_base.settings
   - bagov_base_blocks.settings
   - block.block.bagov_base_account_menu
   - block.block.bagov_base_acessoainformacao

@@ -1,0 +1,11 @@
+uuid: 5cac46b1-fcf7-4a1e-af97-61a8bc47f626
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.publicacao
+id: node.publicacao
+target_entity_type_id: node
+target_bundle: publicacao
+default_langcode: site_default
+language_alterable: false

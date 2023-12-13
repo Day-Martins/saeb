@@ -1,0 +1,11 @@
+uuid: d5d21116-30c1-4cf3-a93e-4b2c3a0fd94b
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.lista_migrada
+id: node.lista_migrada
+target_entity_type_id: node
+target_bundle: lista_migrada
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,18 @@
+uuid: c217da53-cd1b-460e-9d99-1e4cb133ac0f
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Publicação
+type: publicacao
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

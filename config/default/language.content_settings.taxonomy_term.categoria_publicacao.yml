@@ -1,0 +1,11 @@
+uuid: 4b922a8e-2774-44f9-83a6-3e0d8a5dfaab
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_publicacao
+id: taxonomy_term.categoria_publicacao
+target_entity_type_id: taxonomy_term
+target_bundle: categoria_publicacao
+default_langcode: site_default
+language_alterable: false

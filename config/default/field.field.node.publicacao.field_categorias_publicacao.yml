@@ -1,0 +1,29 @@
+uuid: 5723213e-1819-4caa-8be3-cb165ce4acaf
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_categorias_publicacao
+    - node.type.publicacao
+    - taxonomy.vocabulary.categoria_publicacao
+id: node.publicacao.field_categorias_publicacao
+field_name: field_categorias_publicacao
+entity_type: node
+bundle: publicacao
+label: Categorias
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categoria_publicacao: categoria_publicacao
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference
