@@ -1,0 +1,10 @@
+name: 'SAEB Migration'
+type: module
+description: 'Módulo personalizado para migrar conteúdo para o site SAEB.'
+core_version_requirement: ^10
+package: Custom
+dependencies:
+  - drupal:migrate
+  - drupal:migrate_plus
+  - drupal:migrate_tools
+
